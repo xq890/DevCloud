@@ -5,3 +5,47 @@
 "@angular/core@^4.0.2":
   version "4.0.2"
   resolved "http://registry.npm.taobao.org/@angular/core/download/@angular/core-4.0.2.tgz#195153f8623b59f07c30b3b8954e14842c3959c3"
+
+core.js@^0.4.2:
+  version "0.4.2"
+  resolved "http://registry.npm.taobao.org/core.js/download/core.js-0.4.2.tgz#b0296ef6ed02b1c15e249e4ce38067526f1c7af1"
+  dependencies:
+    underscore "*"
+    underscore.string "*"
+
+rxjs@^5.3.0:
+  version "5.3.0"
+  resolved "http://registry.npm.taobao.org/rxjs/download/rxjs-5.3.0.tgz#d88ccbdd46af290cbdb97d5d8055e52453fabe2d"
+  dependencies:
+    symbol-observable "^1.0.1"
+
+sprintf-js@^1.0.3:
+  version "1.0.3"
+  resolved "http://registry.npm.taobao.org/sprintf-js/download/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
+
+symbol-observable@^1.0.1:
+  version "1.0.4"
+  resolved "http://registry.npm.taobao.org/symbol-observable/download/symbol-observable-1.0.4.tgz#29bf615d4aa7121bdd898b22d4b3f9bc4e2aa03d"
+
+typescript@^2.2.2:
+  version "2.2.2"
+  resolved "http://registry.npm.taobao.org/typescript/download/typescript-2.2.2.tgz#606022508479b55ffa368b58fee963a03dfd7b0c"
+
+underscore.string@*:
+  version "3.3.4"
+  resolved "http://registry.npm.taobao.org/underscore.string/download/underscore.string-3.3.4.tgz#2c2a3f9f83e64762fdc45e6ceac65142864213db"
+  dependencies:
+    sprintf-js "^1.0.3"
+    util-deprecate "^1.0.2"
+
+underscore@*:
+  version "1.8.3"
+  resolved "http://registry.npm.taobao.org/underscore/download/underscore-1.8.3.tgz#4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022"
+
+util-deprecate@^1.0.2:
+  version "1.0.2"
+  resolved "http://registry.npm.taobao.org/util-deprecate/download/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
+
+zone.js@^0.8.5:
+  version "0.8.5"
+  resolved "http://registry.npm.taobao.org/zone.js/download/zone.js-0.8.5.tgz#7906e017482cbff4c3f079c5c34305ce941f5ba2"
