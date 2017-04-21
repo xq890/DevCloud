@@ -13,6 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="npm-debug.log.3796745895" />
     <None Remove="yarn-error.log" />
   </ItemGroup>
   <ItemGroup>
