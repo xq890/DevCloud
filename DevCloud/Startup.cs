@@ -12,6 +12,7 @@ using Microsoft.Extensions.Logging;
 using DevCloud.Data;
 using DevCloud.Models;
 using DevCloud.Services;
+using Webpack;
 
 namespace DevCloud
 {
@@ -75,8 +76,22 @@ namespace DevCloud
 
             app.UseIdentity();
 
-            // Add external authentication middleware below. To configure them please see https://go.microsoft.com/fwlink/?LinkID=532715
 
+            // Add external authentication middleware below. To configure them please see https://go.microsoft.com/fwlink/?LinkID=532715
+            app.UseWebpack(new WebpackOptions
+            {
+                EntryPoint = "~/js/site.js",
+                OutputFileName = "[name].bundle.js",
+             
+                DevToolType = DevToolType.SourceMap,
+                //EnableHotLoading = true,
+                HandleAngularTemplates = true,
+                HandleStyles = true,
+                StaticFileTypes = new[] { StaticFileType.Eot, StaticFileType.Jpg, StaticFileType.Png, StaticFileType.Svg, StaticFileType.Ttf, StaticFileType.Woff, StaticFileType.Woff2 },
+                StylesTypes = new[] { StylesType.Css, StylesType.Sass }
+
+
+            });
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
