@@ -80,14 +80,23 @@ namespace DevCloud
             // Add external authentication middleware below. To configure them please see https://go.microsoft.com/fwlink/?LinkID=532715
             app.UseWebpack(new WebpackOptions
             {
-                EntryPoint = "~/js/site.js",
+                EntryPoint = "App/main.ts",
                 OutputFileName = "[name].bundle.js",
-             
+               
                 DevToolType = DevToolType.SourceMap,
                 //EnableHotLoading = true,
                 HandleAngularTemplates = true,
                 HandleStyles = true,
-                StaticFileTypes = new[] { StaticFileType.Eot, StaticFileType.Jpg, StaticFileType.Png, StaticFileType.Svg, StaticFileType.Ttf, StaticFileType.Woff, StaticFileType.Woff2 },
+                StaticFileTypes = new[] 
+                {
+                    StaticFileType.Eot,
+                    StaticFileType.Jpg,
+                    StaticFileType.Png,
+                    StaticFileType.Svg,
+                    StaticFileType.Ttf,
+                    StaticFileType.Woff,
+                    StaticFileType.Woff2
+                },
                 StylesTypes = new[] { StylesType.Css, StylesType.Sass }
 
 
