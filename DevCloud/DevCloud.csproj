@@ -1,4 +1,4 @@
-<Project ToolsVersion="15.0" Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project ToolsVersion="15.0" Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
@@ -17,6 +17,15 @@
 
     <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
     <Content Remove="ClientApp\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientApp\dist\vendor-manifest.json" />
+    <Content Include="wwwroot\dist\89889688147bd7575d6327160d64e760.svg" />
+    <Content Include="wwwroot\dist\main-client.js" />
+    <Content Include="wwwroot\dist\main-client.js.map" />
+    <Content Include="wwwroot\dist\vendor-manifest.json" />
+    <Content Include="wwwroot\dist\vendor.css" />
+    <Content Include="wwwroot\dist\vendor.js" />
   </ItemGroup>
   <Target Name="RunWebpack" AfterTargets="ComputeFilesToPublish">
     <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
