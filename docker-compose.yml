@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  devcloud:
+    image: devcloud
+    build:
+      context: ./DevCloud
+      dockerfile: Dockerfile

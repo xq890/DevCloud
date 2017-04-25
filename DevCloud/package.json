@@ -2,7 +2,10 @@
   "name": "WebApplicationBasic",
   "version": "0.0.0",
   "scripts": {
-    "test": "karma start ClientApp/test/karma.conf.js"
+    "test": "karma start ClientApp/test/karma.conf.js",
+    "start": "npm run build && dotnet run",
+    "build": "webpack  --config webpack.config.vendor.js && webpack",
+    "webpack": "webpack"
   },
   "dependencies": {
     "@angular/common": "^2.4.5",
